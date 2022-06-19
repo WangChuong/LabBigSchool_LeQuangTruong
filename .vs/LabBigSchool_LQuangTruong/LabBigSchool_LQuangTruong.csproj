@@ -181,25 +181,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202206091606543_InitialModel.cs" />
-    <Compile Include="Migrations\202206091606543_InitialModel.Designer.cs">
-      <DependentUpon>202206091606543_InitialModel.cs</DependentUpon>
+    <Compile Include="Migrations\202206160232425_update DB.cs" />
+    <Compile Include="Migrations\202206160232425_update DB.Designer.cs">
+      <DependentUpon>202206160232425_update DB.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202206091616430_CreateTableCourse.cs" />
-    <Compile Include="Migrations\202206091616430_CreateTableCourse.Designer.cs">
-      <DependentUpon>202206091616430_CreateTableCourse.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202206091617353_PopulateCategoryTable.cs" />
-    <Compile Include="Migrations\202206091617353_PopulateCategoryTable.Designer.cs">
-      <DependentUpon>202206091617353_PopulateCategoryTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202206100315128_LabBigSchool.cs" />
-    <Compile Include="Migrations\202206100315128_LabBigSchool.Designer.cs">
-      <DependentUpon>202206100315128_LabBigSchool.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202206130107034_AddAttendance.cs" />
-    <Compile Include="Migrations\202206130107034_AddAttendance.Designer.cs">
-      <DependentUpon>202206130107034_AddAttendance.cs</DependentUpon>
+    <Compile Include="Migrations\202206190539532_AddFollowingsTable.cs" />
+    <Compile Include="Migrations\202206190539532_AddFollowingsTable.Designer.cs">
+      <DependentUpon>202206190539532_AddFollowingsTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -290,20 +278,11 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202206091606543_InitialModel.resx">
-      <DependentUpon>202206091606543_InitialModel.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202206160232425_update DB.resx">
+      <DependentUpon>202206160232425_update DB.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202206091616430_CreateTableCourse.resx">
-      <DependentUpon>202206091616430_CreateTableCourse.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202206091617353_PopulateCategoryTable.resx">
-      <DependentUpon>202206091617353_PopulateCategoryTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202206100315128_LabBigSchool.resx">
-      <DependentUpon>202206100315128_LabBigSchool.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202206130107034_AddAttendance.resx">
-      <DependentUpon>202206130107034_AddAttendance.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202206190539532_AddFollowingsTable.resx">
+      <DependentUpon>202206190539532_AddFollowingsTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
