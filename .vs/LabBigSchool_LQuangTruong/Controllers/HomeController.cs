@@ -7,6 +7,7 @@ using System.Web.Mvc;
 using System.Data.Entity;
 using System.ComponentModel.DataAnnotations;
 using System.Data.Entity.Infrastructure;
+using LabBigSchool_LQuangTruong.ViewModels;
 
 namespace LabBigSchool_LQuangTruong.Controllers
 {
@@ -20,11 +21,16 @@ namespace LabBigSchool_LQuangTruong.Controllers
         }
         public ActionResult Index()
         {
-            var upcommingCourses = _dbContext.Courses
+            var upcomingCourses = _dbContext.Courses
                 .Include(c => c.Lecturer)
                 .Include(c => c.Category)
                 .Where(c => c.Datetime > DateTime.Now);
-                return View(upcommingCourses);
+            var viewModel = new CourseViewModel
+            {
+                UpcomingCourses = upcomingCourses,
+                ShowAction = User.Identity.IsAuthenticated
+            };
+            return View(viewModel);
         }
 
         public ActionResult About()
